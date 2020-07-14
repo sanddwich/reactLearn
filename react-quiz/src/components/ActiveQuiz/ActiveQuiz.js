@@ -7,7 +7,7 @@ export default props => (
     <p className={classes.TitleQuestion}>
       <span>
         <strong>2.</strong>&nbsp;
-        How do you do?
+        {props.question}
       </span>
 
       <small>(4 из 12)</small>

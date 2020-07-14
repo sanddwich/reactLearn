@@ -6,11 +6,12 @@ class Quiz extends Component {
   state = {
     quiz: [
       {
+        question: 'Какого цвета снег?',
         answers: [
-          {text: 'Вопрос 1'},
-          {text: 'Вопрос 2'},
-          {text: 'Вопрос 3'},
-          {text: 'Вопрос 4'},
+          {text: 'Белый', id: 1},
+          {text: 'Красный', id: 2},
+          {text: 'Желтый', id: 3},
+          {text: 'Черный', id: 4},
         ]
       }
     ],
@@ -21,7 +22,7 @@ class Quiz extends Component {
       <div className={classes.Quiz}>
         <div className={classes.QuizWrapper}>
           <h1>Quiz</h1>
-          <ActiveQuiz answers={this.state.quiz[0].answers} />
+          <ActiveQuiz answers={this.state.quiz[0].answers} question={this.state.quiz[0].question} />
         </div>
       </div>
     );
