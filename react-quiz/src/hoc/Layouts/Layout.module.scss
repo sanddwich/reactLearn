@@ -1,0 +1,11 @@
+.Layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.Layout main {
+  display: flex;
+  flex-direction: column; /* Размещение контента в колонку */
+  flex-grow: 1; /* Занимает доступную высоту целиком */
+}
