@@ -20,8 +20,18 @@ class Car extends Component {
     console.log('componentWillUpdate', nextProps, nextState);
   }
 
+  static getDerivedStateFromProps(nextProps, prevState) {
+    console.log('getDerivedStateFromProps', nextProps, prevState);
+
+    return prevState;
+  }
+
   componentDidUpdate() {
     console.log('componentDidUpdate');
+  }
+
+  getSnapshotBeforeUpdate() {
+    console.log('getSnapshotBeforeUpdate');
   }
 
   componentWillUnmount() {
