@@ -1,7 +1,7 @@
 .ActiveQuiz{
   box-sizing: border-box;
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid #8D4E4E;
   border-radius: 5px;
 
   .TitleQuestion {
@@ -10,4 +10,17 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.questionNav {
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #8D4E4E;
+  cursor: pointer;
+}
+
+.questionNavAction {
+  text-decoration: underline;
 }

@@ -7,8 +7,14 @@ export default (props) => (
     <ul>
       {props.answers.map((answer, index) => {
         return (
-          <AnswerItem key={index} answer={answer}/>
-        )
+          <AnswerItem
+            key={index}
+            answer={answer}
+            onAnswerClick={props.onAnswerClick}
+            activeQuestion={props.activeQuestion}
+            userInsert={props.userInsert}
+          />
+        );
       })}
     </ul>
   </div>
