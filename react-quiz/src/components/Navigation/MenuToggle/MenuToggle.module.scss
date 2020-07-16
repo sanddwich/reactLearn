@@ -4,7 +4,7 @@
   top: 40px;
   font-size: 20px;
   cursor: pointer;
-  color: black;
+  color: #8d4e4e;
   transition: all .3s ease-in;
   z-index: 1000;
 
@@ -16,4 +16,5 @@
 
 .open {
   left: 320px;
+  color: white
 }
