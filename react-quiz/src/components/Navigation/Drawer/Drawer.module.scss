@@ -25,11 +25,11 @@
         font-size: 30px;
         text-decoration: none;
         padding: 5px 20px;
-        transition: opacity .3s;
+        transition: opacity 0.3s;
         box-sizing: border-box;
         display: flex;
 
-        &:hover, &:active {
+        &:hover {
           background-color: white;
           color: #8d4e4e;
           cursor: pointer;
@@ -41,6 +41,12 @@
 
 .close {
   transform: translateX(-300px);
+}
+
+.active {
+  background-color: white;
+  color: #8d4e4e !important;
+  cursor: pointer;
 }
 
 // .linkDiv {
