@@ -1,0 +1,35 @@
+.Input {  
+  margin-bottom: 20px;
+
+  input {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #8d4e4e;
+    transition: all .3s ease-in-out;
+
+    &:focus {
+      outline-color: #f0d0d0;
+    }
+  }
+
+  label {
+    margin-bottom: 3px;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+    color: white;
+  }
+
+  span {
+    color: yellow;
+    font-size: 12px;
+    font-weight: bold;
+  } 
+}
+
+.invalid label{
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
