@@ -23,3 +23,8 @@
 
   }
 }
+
+.disabled button {
+  background-color: #CCCCCC;
+  cursor: not-allowed;
+}

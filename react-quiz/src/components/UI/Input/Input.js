@@ -7,7 +7,7 @@ function isInvalid({valid, touched, shouldValidate}) {
 
 export default (props) => {
   const insertClasses = [classes.Input];
-  const inputType = props.inputType || 'text';
+  const inputType = props.type || 'text';
   const htmlFor = inputType + Math.random();
 
   if(isInvalid(props)) {
@@ -21,7 +21,7 @@ export default (props) => {
         type={inputType}
         id={htmlFor}
         value={props.value}
-        onChange={() => props.onChange(htmlFor)}
+        onChange={(event) => props.onChange(event)}
       />
 
       {isInvalid(props) ? <span>{props.errorMessage || 'Поле неверно заполнено'}</span> : null}

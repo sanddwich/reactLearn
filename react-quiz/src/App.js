@@ -9,7 +9,7 @@ import QuizCreator from './containers/QuizCreator/QuizCreator';
 import LayoutAdmin from './hoc/Layouts/LayoutAdmin/LayoutAdmin';
 
 class App extends Component {
-  render() {
+  render() {    
     return (
       <Switch>
         <Route path='/admin' exact component={LayoutAdmin} />
