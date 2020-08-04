@@ -28,3 +28,12 @@
   background-color: #CCCCCC;
   cursor: not-allowed;
 }
+    
+.success button {
+  background-color: green;
+
+  &:hover {
+    background-color: yellowgreen;
+    transition: background-color .3s ease-in-out;
+  }
+}
